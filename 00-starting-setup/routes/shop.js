@@ -1,10 +1,11 @@
 
+
 const express = require('express');
+
+let controllerfile=require('../Controller/products.js');
 
 const router = express.Router();
 
-let controllerfile=require('../Controller/Products.js');
-
-router.get('/',controllerfile.getslash );
+router.get('/',controllerfile.getslash);
 
 module.exports = router;
